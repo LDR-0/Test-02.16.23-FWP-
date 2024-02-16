@@ -1,5 +1,5 @@
 //1 задание
-const names = ['Иван, реальный пацан, шарит за мемы', 'Дева Мария', 'Алексей, не придумал', 'Ольга Хельга', 'Сергей, опытный', 'Анна Генриетта'];
+const names = ['Иван', 'Дева Мария', 'Алексей', 'Ольга', 'Сергей', 'Анна-Генриетта'];
 
 names.forEach((name) => {
     console.log(`Привет, ${name}`);
@@ -39,10 +39,10 @@ const filteredAndMappetPeople = mapet
 console.log(filteredAndMappetPeople);
 // 5 задание
 const sales = [
-    { product: 'Телефон, смартфон, айфон', price: 50000, power: 1 },
-    { product: 'Чехол, зачем когда есть защитное стекло?', price: 1500, power: 2 },
-    { product: 'Зарядное устройство, за 2500? Лучше на алике пб заказать', price: 2500, power: 1 }
+    { product: 'Телефон', price: 50000, power: 1 },
+    { product: 'Чехол?', price: 1500, power: 2 },
+    { product: 'Зарядное устройство', price: 2500, power: 1 }
   ];  
 const totalSalesAmount = sales.reduce((total, sale) => total + (sale.price * sale.power), 0);
 
-console.log(`Общая стоимость продаж: ${totalSalesAmount}, кто-то получит премию`);
+console.log(`Общая стоимость продаж: ${totalSalesAmount}`);
